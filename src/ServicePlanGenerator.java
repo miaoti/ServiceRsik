@@ -29,7 +29,7 @@ public class ServicePlanGenerator {
         for (int i = 0; i < numPlans; i++) {
             Set<String> usedServices = new HashSet<>();
             List<Integer> servicePlan = new ArrayList<>();
-            int planSize = random.nextInt(maxPlanSize) + 1; // Randomly determine the size of the plan, we had a max
+            int planSize = random.nextInt(maxPlanSize) + 2; // Randomly determine the size of the plan, we had a max
 
             while (servicePlan.size() < planSize) {
                 int randomIndex = random.nextInt(services.size());
